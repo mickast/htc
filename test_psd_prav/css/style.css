@@ -1,0 +1,246 @@
+
+body{
+    /*background-image: url("images/template21.jpg");
+    background-position: top center;*/
+}
+@font-face {
+    font-family: 'Fregat';
+    src: local('Fregat'), url('../fonts/fregat/fregat.woff2') format('woff2'), url('../fonts/fregat/fregat.woff') format('woff'), url('../fonts/fregat/fregat.ttf') format('truetype');
+}
+
+.header{
+    max-width: 100%;
+    height: 60px;
+    background: #f2f2f2;
+    text-align: center;
+}
+.wrapp{
+    margin: auto;
+    width: 940px;
+}
+.nav__a{
+    text-decoration: none;
+    float: left;
+    font-family: Fregat;
+    font-weight: bold;
+    color: #1a09c9;
+    font-size: 12pt;
+    margin-right: 28px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    display: block;
+}
+.nav__a:hover{
+
+    color: #555555;
+    cursor: pointer;
+    border: 1px solid #555555;
+    border-radius: 18px;
+    margin-top: 14px;
+    line-height: 1.6em;
+    font-size: 12pt;
+    margin-right: 22px;
+    margin-left: -6px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+}
+.search__input{
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 220px;
+    height: 32px;
+    border-radius: 18px;
+    border-top: 2px solid #bfc3c0;
+    outline:0;
+    border-left: none;
+    background-image: url("../images/loop.jpg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+.search--header {
+    margin-top: 12px;
+    float: right;
+}
+.wrapper{
+    width: 940px;
+    height: 922px;
+    margin: auto;
+}
+.name{
+    width:100%;
+    height: 189px;
+    border-image: url("../images/delimetr.jpg") 30 round round;
+    border-top: none;
+    border-width: 1px;
+    border-top-width: 0px;
+}
+.name__logo{
+    width: 119px;
+    height: 85px;
+    float: left;
+}
+.name__logo--position{
+    margin-top: 52px;
+    float: left;
+}
+.name__title{
+    padding-top: 52px;
+    display: inline-block;
+}
+.name__title--text{
+    font-family: Fregat;
+    font-weight: bold;
+    font-size: 35pt;
+    color: #747474;
+    text-transform: uppercase;
+
+}
+.name__title--subtext{
+    color: #747474;
+    font-size: 10pt;
+}
+.title{
+    width: 100%;
+    height: 168px;
+}
+.crumbs{
+    padding-top: 40px;
+}
+
+.crumbs__text{
+    border-bottom: 1px solid  #747474;
+    text-decoration: none;
+    cursor: pointer;
+    color: #747474;
+    font-size: 10.5pt ;
+
+}
+.crumbs__link:last-child::before{
+    content: "→ ";
+    text-decoration: none;
+}
+.crumbs__link{
+    text-decoration: none;
+}
+.title__title-text{
+    font-size: 30px;
+    color: #747474;
+    font-family: Fregat;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+
+}
+.form__name--inp{
+    margin-left: 78px;
+    height: 25px;
+    border-radius: 5px;
+    background: #f6f6f6;
+    box-shadow: 0  1px #b9b9b9;
+    border: none;
+    outline:0;
+    width:462px;
+    padding-left: 12px;
+}
+.form__lbl{
+    font-family: Fregat;
+    font-size: 10pt;
+    color: #747474;
+}
+.form__code{
+    margin-top: 23px;
+}
+.form__code--inp{
+    margin-left: 97px;
+    height: 25px;
+    border-radius: 5px;
+    background: #f6f6f6;
+    box-shadow: 0  1px #b9b9b9;
+    border: none;
+    outline:0;
+    width:300px;
+    padding-left: 12px;
+}
+.form__category{
+    margin-top: 25px;
+}
+.form__category--inp{
+    margin-left: 57px;
+    height: 25px;
+    border-radius: 5px;
+    background: #f6f6f6;
+    box-shadow: 0  1px #b9b9b9;
+    border: none;
+    outline:0;
+    width:300px;
+    font-family: Fregat;
+    font-size: 10pt;
+    color: #747474;
+    outline:0;
+}
+.form__check{
+    margin-top: 25px;
+}
+.form__check--inp{
+    margin-left: 0px;
+    margin-right: 13px;
+}
+.form__area{
+    margin-top: 27px;
+}
+.form__area--inp{
+    border: none;
+    background: #f6f6f6;
+    box-shadow: 0  1px #b9b9b9;
+    border-radius: 5px;
+    outline:0;
+    margin-left: 57px;
+}
+.form__btn{
+    margin-left: 160px;
+    margin-top: 39px;
+    background: #ffffff;
+    border:1px solid #6255ee;
+    border-radius: 24px;
+    height: 50px;
+    width: 221px;
+    font-family: Fregat;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a09c9;
+    outline:0;
+}
+.form__btn:hover{
+    background: #6255ee;
+    color: #ffffff;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 120px;
+    background-color: #f2f2f2;
+
+}
+.footer__nav{
+    padding-top: 25px;
+    width: 400px;
+}
+.footer__nav a{
+    float: left;
+    text-decoration: none;
+    color: #1a09c9;
+    font-family: Fregat;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+.footer__copyright{
+    float: right;
+    font-family: Fregat;
+    font-size: 10pt;
+    color: #bfc3c0;
+
+}
