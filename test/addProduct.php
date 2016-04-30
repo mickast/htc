@@ -57,7 +57,6 @@ header('Content-Type: text/html; charset=UTF-8');
                 } else{
                     require_once "dataSaver.php";
                     echo "<p class=\"status__success\">Данные успешно добавлены!</p>";
-                    echo 666;
                 }
             }
             ?>
