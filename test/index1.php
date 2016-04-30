@@ -62,8 +62,8 @@
     </div>
     <div class="Results">
         <?php
-        spl_autoload_register(function($name) {
-            require $name.'.php';
+        spl_autoload_register(function($class) {
+            require $class.'.php';
         });
         if (!empty($_POST)){
             if($_POST['change'] == "Вывести данные из CSV"){
