@@ -67,9 +67,11 @@
         });
         if (!empty($_POST)){
             if($_POST['change'] == "Вывести данные из CSV"){
-                $db = new DB("localhost","intern_testmickast","intern_mickast","1234554321");
-            }else{
                 $csv = new Csv("file.csv");
+                $results = $csv->readCsv();
+                $csv->printCsv($results);
+            }else{
+                $db = new DB("localhost","intern_testmickast","intern_mickast","1234554321");
             }
         }
         ?>
