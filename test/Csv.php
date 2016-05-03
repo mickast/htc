@@ -18,32 +18,23 @@ class Csv
 
     public function readForm($named, $code, $category, $check, $area)
     {
-        $this->dataList = array(
-            array("Наименование", $named),
-            array("Код товара", $code),
-            array("Категория товара", $category),
-            array("Популярный товар", $check),
-            array("Описание товара", $area)
-        );
-        //print_r($this->dataList);
+        $this->dataList = array($named, $code, $category, $check, $area);
+
     }
 
     public function writeToCsv()
     {
         $fp = fopen($this->fname, 'a');
-        foreach ($this->dataList as $line) {
-            fputcsv($fp, $line);
-        }
+        fputcsv($fp, $this->dataList);
         fclose($fp);
     }
 
     public function readCsv()
     {
+
         $fp = fopen($this->fname, 'r');
         while (($data = fgetcsv($fp, 0, ",")) !== FALSE) {
-            for ($c = 0; $c < count($data); $c++) {
-                $dataListFromCsv[] = $data[$c];
-            }
+            $dataListFromCsv[] = $data;
         }
         fclose($fp);
         return $dataListFromCsv;
@@ -52,17 +43,34 @@ class Csv
     public function printCsv($data)
     {
         echo "<table>";
+        echo "<tr>";
+        echo "<th>Наименование</th>";
+        echo "<th>Код товара</th>";
+        echo "<th>Категория товара</th>";
+        echo "<th>Популярный товар</th>";
+        echo "<th>Описание товара</th>";
+        echo "</tr>";
+        //for($i = 0;$i<count($results);$i++){
         $i = 0;
-        while ($i < count($data)) {
+        while($i<count($data)){
             echo "<tr>";
             echo "<td>";
-            echo $data[$i];
+            echo $data[$i][0];
             echo "</td>";
             echo "<td>";
-            echo $data[$i + 1];
+            echo $data[$i][1];
+            echo "</td>";
+            echo "<td>";
+            echo $data[$i][2];
+            echo "</td>";
+            echo "<td>";
+            echo $data[$i][3];
+            echo "</td>";
+            echo "<td>";
+            echo $data[$i][4];
             echo "</td>";
             echo "</tr>";
-            $i += 2;
+            $i++;
         }
         echo "</table>";
     }
