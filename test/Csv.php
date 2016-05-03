@@ -34,7 +34,6 @@ class Csv
         foreach ($this->dataList as $line) {
             fputcsv($fp, $line);
         }
-
         fclose($fp);
     }
 
