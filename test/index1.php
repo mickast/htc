@@ -57,21 +57,22 @@
                 <option>Вывести данные из CSV</option>
                 <option>Вывести данные из БД</option>
             </select>
-            <input type="submit" class="formResults__btn" name="formResults__btn" value="Вывести" />
+            <input type="submit" class="formResults__btn" name="formResults__btn" value="Вывести"/>
         </form>
     </div>
     <div class="Results">
         <?php
-        spl_autoload_register(function($class) {
-            require $class.'.php';
+
+        spl_autoload_register(function ($class) {
+            require $class . '.php';
             echo 1;
         });
-        if (!empty($_POST)){
-            if($_POST['change'] == "Вывести данные из CSV"){
+        if (!empty($_POST)) {
+            if ($_POST['change'] == "Вывести данные из CSV") {
                 $csv = new Csv("file.csv");
                 $results = $csv->readCsv();
-            }else{
-                $db = new DB("localhost","intern_testmickast","intern_mickast","1234554321");
+            } else {
+                $db = new DB("localhost", "intern_testmickast", "intern_mickast", "1234554321");
                 $results = $db->readFromDb();
             }
             echo "<table>";
@@ -83,7 +84,7 @@
             echo "<th>Описание товара</th>";
             echo "</tr>";
             $i = 0;
-            while($i<count($results)){
+            while ($i < count($results)) {
                 echo "<tr>";
                 echo "<td>";
                 echo $results[$i][0];

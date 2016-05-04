@@ -33,7 +33,7 @@ class Csv
     {
 
         $fp = fopen($this->fname, 'r');
-        while (($data = fgetcsv($fp, 0, ",")) !== FALSE) {
+        while (($data = fgetcsv($fp, 0, ",")) !== false) {
             $dataListFromCsv[] = $data;
         }
         fclose($fp);

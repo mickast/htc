@@ -52,7 +52,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
             if (!empty($_POST)) {
 
-                if (!$_POST['named'] || !$_POST['code'] || !$_POST['category'] || !$_POST['check'] || !$_POST['area']){
+                if (!$_POST['named'] || !$_POST['code'] || !$_POST['category'] || !$_POST['check'] || !$_POST['area']) {
                     echo "<p class=\"status__warning\">Не все поля заполнены!</p>";
                 } else {
                     require_once "saveProduct.php";
@@ -78,17 +78,18 @@ header('Content-Type: text/html; charset=UTF-8');
             </select>
         </div>
         <div class="form__check">
-            <input type="hidden" name="check" value="No" />
-            <input type="checkbox" id="check" name="check" class="form__check--inp"/><label for="check" class="form__lbl">Популярный
-            товар</label>
+            <input type="hidden" name="check" value="No"/>
+            <input type="checkbox" id="check" name="check" class="form__check--inp"/><label for="check"
+                                                                                            class="form__lbl">Популярный
+                товар</label>
         </div>
         <div class="form__area">
             <label class="form__lbl">Описание товара</label><textarea type="text" rows="11" cols="63"
-                                                                                  style="resize: none;"
-                                                                                  class="form__area--inp"
-                                                                                  name="area"></textarea>
+                                                                      style="resize: none;"
+                                                                      class="form__area--inp"
+                                                                      name="area"></textarea>
         </div>
-        <input type="submit" class="form__btn" name="btn" value="Добавить" />
+        <input type="submit" class="form__btn" name="btn" value="Добавить"/>
     </form>
 </div>
 <div class="footer">
