@@ -66,7 +66,7 @@
             require $class.'.php';
         });
         if (!empty($_POST)){
-            if($_POST['change'] == "Вывести данные из CSV"){
+            if($_POST['change'] == "Вывести данные из CSVV"){
                 $csv = new Csv("file.csv");
                 $results = $csv->readCsv();
                 $csv->printCsv($results);
