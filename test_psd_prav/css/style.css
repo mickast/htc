@@ -8,7 +8,7 @@ body{
 }
 
 .header{
-    min-width: 940px;
+    min-width: 970px;
     max-width: 100%;
     height: 60px;
     background: #f2f2f2;
@@ -16,6 +16,7 @@ body{
 }
 .wrapp{
     margin: auto;
+    padding: 0 10px;
     width: 940px;
 }
 .nav__a{
@@ -68,6 +69,7 @@ body{
     height: 922px;
     margin: auto;
     position: relative;
+    padding: 0 10px;
 }
 .name{
     width:100%;
@@ -216,7 +218,7 @@ body{
     width: 100%;
     height: 120px;
     background-color: #f2f2f2;
-    min-width: 940px;
+    min-width: 970px;
 }
 .footer__nav{
     padding-top: 25px;

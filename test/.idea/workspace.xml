@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7d933c61-9003-45ac-bca8-59a10677071b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Csv.php" afterPath="$PROJECT_DIR$/Csv.php" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <push-targets>
-      <push-target-info repo="$PROJECT_DIR$/.." source="master" target-remote="origin2" target-branch="master" />
+      <push-target-info repo="$PROJECT_DIR$/.." source="master" target-remote="origin" target-branch="master" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
@@ -135,7 +134,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test_psd_prav" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.index1.php">
     <configuration default="false" name="index1.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://testmickast.webtest2.htc-cs.com/index1.php">
@@ -249,7 +248,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462350767621</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="111">
+      <created>1462350880772</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1462350880772</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -311,7 +316,8 @@
     <MESSAGE value="Update test1" />
     <MESSAGE value="1" />
     <MESSAGE value="11" />
-    <option name="LAST_COMMIT_MESSAGE" value="11" />
+    <MESSAGE value="111" />
+    <option name="LAST_COMMIT_MESSAGE" value="111" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
