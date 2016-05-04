@@ -16,7 +16,7 @@ header('Content-Type: text/html; charset=UTF-8');
             <a href="index1.php" class="nav__a">Главная</a>
             <a href="#" class="nav__a">Не особо</a>
             <a href="#" class="nav__a">Вообще нет</a>
-            <a href="addProduct.php" class="nav__a">Добавление товара</a>
+            <a href="add.php" class="nav__a">Добавление товара</a>
         </nav>
         <div class="search search--header">
             <input class="search__input" type="text" placeholder="Поиск"/>
@@ -54,15 +54,15 @@ header('Content-Type: text/html; charset=UTF-8');
 
                 if (!$_POST['named'] || !$_POST['code'] || !$_POST['category'] || !$_POST['check'] || !$_POST['area']){
                     echo "<p class=\"status__warning\">Не все поля заполнены!</p>";
-                } else{
-                    require_once "dataSaver.php";
+                } else {
+                    require_once "saveProduct.php";
                     echo "<p class=\"status__success\">Данные успешно добавлены!</p>";
                 }
             }
             ?>
         </div>
     </div>
-    <form action="/test/addProduct.php" method="post">
+    <form action="/test/add.php" method="post">
         <div class="form__name">
             <label class="form__lbl">Наименование</label><input type="text" name="named" class="form__name--inp"/>
         </div>

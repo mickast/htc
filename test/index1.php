@@ -21,7 +21,7 @@
             <a href="index1.php" class="nav__a">Главная</a>
             <a href="#" class="nav__a">Не особо</a>
             <a href="#" class="nav__a">Вообще нет</a>
-            <a href="addProduct.php" class="nav__a">Добавление товара</a>
+            <a href="add.php" class="nav__a">Добавление товара</a>
         </nav>
         <div class="search search--header">
             <input class="search__input" type="text" placeholder="Поиск"/>
@@ -69,7 +69,6 @@
             if($_POST['change'] == "Вывести данные из CSV"){
                 $csv = new Csv("file.csv");
                 $results = $csv->readCsv();
-                //$csv->printCsv($results);
             }else{
                 $db = new DB("localhost","intern_testmickast","intern_mickast","1234554321");
                 $results = $db->readFromDb();

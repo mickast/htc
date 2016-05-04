@@ -1,4 +1,4 @@
-<?
+<?php
 require_once "Csv.php";
 require_once "DB.php";
 
@@ -7,6 +7,3 @@ $db->saveFromFormToDB($_POST['named'], $_POST['code'], $_POST['category'], $_POS
 $csv = new Csv("file.csv");
 $csv->readForm($_POST['named'], $_POST['code'], $_POST['category'], $_POST['check'], $_POST['area']);
 $csv->writeToCsv();
-//$data = $csv->readCsv();
-//$csv->printCsv($data);
-?>
