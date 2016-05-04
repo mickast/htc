@@ -58,7 +58,7 @@ header('Content-Type: text/html; charset=UTF-8');
                     require_once "saveProduct.php";
                     echo "<p class=\"status__success\">Данные успешно добавлены!</p>";
                 }
-            } 
+            }
             ?>
         </div>
     </div>
