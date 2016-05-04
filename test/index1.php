@@ -66,10 +66,11 @@
             require $class.'.php';
         });
         if (!empty($_POST)){
-            if($_POST['change'] == "Вывести данные из CSVV"){
+            if($_POST['change'] == "Вывести данные из CSV"){
                 $csv = new Csv("file.csv");
                 $results = $csv->readCsv();
                 $csv->printCsv($results);
+                echo "ddd";
             }else{
                 $db = new DB("localhost","intern_testmickast","intern_mickast","1234554321");
             }
