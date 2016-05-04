@@ -9,7 +9,7 @@
 class Csv
 {
     private $dataList;
-    private $fname;
+    private $fname; 
 
     public function __construct($fname)
     {
