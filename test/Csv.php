@@ -42,36 +42,6 @@ class Csv
 
     public function printCsv($data)
     {
-        echo "<table>";
-        echo "<tr>";
-        echo "<th>Наименование</th>";
-        echo "<th>Код товара</th>";
-        echo "<th>Категория товара</th>";
-        echo "<th>Популярный товар</th>";
-        echo "<th>Описание товара</th>";
-        echo "</tr>";
-        //for($i = 0;$i<count($results);$i++){
-        $i = 0;
-        while($i<count($data)){
-            echo "<tr>";
-            echo "<td>";
-            echo $data[$i][0];
-            echo "</td>";
-            echo "<td>";
-            echo $data[$i][1];
-            echo "</td>";
-            echo "<td>";
-            echo $data[$i][2];
-            echo "</td>";
-            echo "<td>";
-            echo $data[$i][3];
-            echo "</td>";
-            echo "<td>";
-            echo $data[$i][4];
-            echo "</td>";
-            echo "</tr>";
-            $i++;
-        }
-        echo "</table>";
+
     }
 }

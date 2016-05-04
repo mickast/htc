@@ -69,11 +69,41 @@
             if($_POST['change'] == "Вывести данные из CSV"){
                 $csv = new Csv("file.csv");
                 $results = $csv->readCsv();
-                $csv->printCsv($results);
-                echo "ddd";
+                //$csv->printCsv($results);
             }else{
                 $db = new DB("localhost","intern_testmickast","intern_mickast","1234554321");
+                $results = $db->readFromDb();
             }
+            echo "<table>";
+            echo "<tr>";
+            echo "<th>Наименование</th>";
+            echo "<th>Код товара</th>";
+            echo "<th>Категория товара</th>";
+            echo "<th>Популярный товар</th>";
+            echo "<th>Описание товара</th>";
+            echo "</tr>";
+            $i = 0;
+            while($i<count($results)){
+                echo "<tr>";
+                echo "<td>";
+                echo $results[$i][0];
+                echo "</td>";
+                echo "<td>";
+                echo $results[$i][1];
+                echo "</td>";
+                echo "<td>";
+                echo $results[$i][2];
+                echo "</td>";
+                echo "<td>";
+                echo $results[$i][3];
+                echo "</td>";
+                echo "<td>";
+                echo $results[$i][4];
+                echo "</td>";
+                echo "</tr>";
+                $i++;
+            }
+            echo "</table>";
         }
         ?>
     </div>

@@ -17,7 +17,13 @@ class Db
     }
     public function saveFromFormToDB($name,$code,$category,$popular,$description)
     {
-        $query = "INSERT INTO `csv` (name,code,category,popular,description) VALUES ('$name','$code','$category','$popular','$description')";
+        $query = "INSERT INTO `products` (name,code,category,popular,description) VALUES ('$name','$code','$category','$popular','$description')";
         $pdh = $this->db->query($query);
+    }
+    public function readFromDb(){
+        $query = "SELECT * FROM products";
+        $pdh = $this->db->query($query);
+        $data = $pdh->fetchAll();
+        return $data;
     }
 }
