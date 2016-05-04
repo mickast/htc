@@ -134,11 +134,11 @@ body{
     text-transform: uppercase;
 
 }
-.form--left{
+.form__element__left{
     float: left;
     clear:left;
 }
-.form--right {
+.form__element__right {
     margin-bottom: 25px;
 }
 .form__name--inp{

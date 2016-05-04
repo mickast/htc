@@ -45,7 +45,7 @@
             <h1>Добавление сферического товара</h1>
         </div>
     </div>
-    <form action="" method="">
+    <form action="" method="" class="form">
         <!--<div class="form__name">
             <label class="form__lbl">Наименование</label><input type="text" class="form__name--inp"/>
         </div>
@@ -71,25 +71,25 @@
         </div>
         <button class="form__btn">Добавить</button>-->
         <dl>
-            <dt class="form--left"><label class="form__lbl">Наименование</label></dt>
-            <dd class="form--right"><input type="text" class="form__name--inp"/></dd>
-            <dt class="form--left"><label class="form__lbl">Код товара</label></dt>
-            <dd class="form--right"><input type="text" class="form__code--inp"/></dd>
-            <dt class="form--left"><label class="form__lbl">Категория товара</label></dt>
-            <dd class="form--right">
+            <dt class="form__element__left"><label class="form__lbl">Наименование</label></dt>
+            <dd class="form__element__right"><input type="text" class="form__name--inp"/></dd>
+            <dt class="form__element__left"><label class="form__lbl">Код товара</label></dt>
+            <dd class="form__element__right"><input type="text" class="form__code--inp"/></dd>
+            <dt class="form__element__left"><label class="form__lbl">Категория товара</label></dt>
+            <dd class="form__element__right">
                 <select size="1" name="name[]" class="form__category--inp">
                     <option>Товары сферические вакуумные</option>
                     <option>Твары сферические веселые</option>
                     <option>Твары сферические скучные</option>
                 </select>
             </dd>
-            <dt class="form--left"><input type="checkbox" id="check" class="form__check--inp"/></dt>
-            <dd class="form--right"><label for="check" class="form__lbl">Популярный товар</label></dd>
-            <dt class="form--left"><label class="form__lbl">Описание товара</label></dt>
-            <dd class="form--right"><textarea type="text" rows="11" cols="63"
+            <dt class="form__element__left"><input type="checkbox" id="check" class="form__check--inp"/></dt>
+            <dd class="form__element__right"><label for="check" class="form__lbl">Популярный товар</label></dd>
+            <dt class="form__element__left"><label class="form__lbl">Описание товара</label></dt>
+            <dd class="form__element__right"><textarea type="text" rows="11" cols="63"
                           style="resize: none;"
                           class="form__area--inp"></textarea></dd>
-            <dd class="form--right">
+            <dd class="form__element__right">
                 <button class="form__btn">Добавить</button>
             </dd>
         </dl>
