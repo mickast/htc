@@ -64,6 +64,7 @@
         <?php
         spl_autoload_register(function($class) {
             require $class.'.php';
+            echo 1;
         });
         if (!empty($_POST)){
             if($_POST['change'] == "Вывести данные из CSV"){
